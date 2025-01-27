@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josue Salazar Lopez - Desarrollador Full Stack</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-[#1A1A1F] text-white font-sans">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-[#1A1A1F]/90 backdrop-blur-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-amber-500">JPSL</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-300 hover:text-amber-500">Inicio</a>
+                    <a href="#servicios" class="text-gray-300 hover:text-amber-500">Servicios</a>
+                    <a href="#experiencia" class="text-gray-300 hover:text-amber-500">Experiencia</a>
+                    <a href="#contacto" class="text-gray-300 hover:text-amber-500">Contacto</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="md:hidden text-gray-300 hover:text-amber-500" id="mobile-menu-button">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menú móvil -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-4 py-3 space-y-4 bg-[#1A1A1F] border-t border-gray-800">
+                <a href="#inicio" class="block text-gray-300 hover:text-amber-500 py-2">Inicio</a>
+                <a href="#servicios" class="block text-gray-300 hover:text-amber-500 py-2">Servicios</a>
+                <a href="#experiencia" class="block text-gray-300 hover:text-amber-500 py-2">Experiencia</a>
+                <a href="#contacto" class="block text-gray-300 hover:text-amber-500 py-2">Contacto</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Sección Hero -->
+    <section id="inicio" class="min-h-screen flex items-center">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <p class="text-amber-500 mb-4">Hola! Soy</p>
+                    <h1 class="text-5xl font-bold mb-6">
+                        <span class="hidden md:block">Josué Porfirio Salazar López</span>
+                        <span class="md:hidden">Porfirio Salazar</span>
+                    </h1>
+                    <p class="text-gray-400 mb-8 text-lg max-w-xl">
+                        Un joven apasionado por el desarrollo de software eficiente y con experiencia en la creación 
+                        de sistemas escalables y soluciones innovadoras. Disfruto enfrentar desafíos técnicos 
+                        y colaborar con equipos multidisciplinarios.
+                    </p>
+                    <div class="flex space-x-4 mb-12">
+                        <a href="mailto:porfiriosalazarlopez319@outlook.com" 
+                            class="bg-amber-500 hover:bg-amber-600 px-6 py-3 rounded-lg transition-colors">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contáctame</span>
+                        </a>
+                        <a href="assets/document/CV-Josue-Porfirio-Salazar-Lopez.pdf" 
+                            download
+                            class="bg-amber-500 hover:bg-amber-600 px-6 py-3 rounded-lg transition-colors">
+                            <i class="fas fa-download"></i>
+                            <span>Descargar CV</span>
+                        </a>
+                    </div>
+                    <!-- Tecnologías -->
+                    <div class="grid grid-cols-4 gap-8 items-center">
+                        <div class="text-center">
+                            <i class="fab fa-angular text-4xl text-amber-500 hover:text-amber-400 transition"></i>
+                            <p class="text-sm mt-2">Angular</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fab fa-react text-4xl text-amber-500 hover:text-amber-400 transition"></i>
+                            <p class="text-sm mt-2">React</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fab fa-microsoft text-4xl text-amber-500 hover:text-amber-400 transition"></i>
+                            <p class="text-sm mt-2">.NET</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fab fa-aws text-4xl text-amber-500 hover:text-amber-400 transition"></i>
+                            <p class="text-sm mt-2">AWS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-end">
+                    <div class="profile-container">
+                        <div class="background-circle"></div>
+                        <div class="profile-wrapper">
+                            <img src="assets/images/profile.jpeg" 
+                                alt="Perfil" 
+                                class="profile-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#servicios" class="scroll-down-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+    <!-- Sección Servicios -->
+    <section id="servicios" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12">¿Qué puedo hacer por ti?</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <p class="text-gray-400 mb-8">
+                        Desarrollo soluciones eficientes y escalables utilizando las últimas tecnologías 
+                        y mejores prácticas del mercado. Mi enfoque se centra en crear aplicaciones 
+                        robustas y mantenibles que aporten valor real a los usuarios.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-8 mb-8">
+                        <div class="text-center">
+                            <h3 class="text-amber-500 text-4xl font-bold mb-2">1+</h3>
+                            <p class="text-gray-400">Año de<br>Experiencia</p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-amber-500 text-4xl font-bold mb-2">10+</h3>
+                            <p class="text-gray-400">Proyectos<br>Completados</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#2A2A2F] p-6 rounded-lg">
+                        <h4 class="text-lg font-bold mb-4">Tecnologías Principales</h4>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <!-- Frontend -->
+                            <div>
+                                <h5 class="text-amber-500 font-bold mb-4">Frontend</h5>
+                                <div class="space-y-4">
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fab fa-angular text-amber-500"></i>
+                                        <span>Angular</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fab fa-react text-amber-500"></i>
+                                        <span>React</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fab fa-js-square text-amber-500"></i>
+                                        <span>TypeScript</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fab fa-html5 text-amber-500"></i>
+                                        <span>HTML5</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fab fa-css3-alt text-amber-500"></i>
+                                        <span>CSS3</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fab fa-js-square text-amber-500"></i>
+                                        <span>JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Backend -->
+                            <div>
+                                <h5 class="text-amber-500 font-bold mb-4">Backend</h5>
+                                <div class="space-y-4">
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fab fa-microsoft text-amber-500"></i>
+                                        <span>.NET</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fab fa-microsoft text-amber-500"></i>
+                                        <span>C#</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fas fa-database text-amber-500"></i>
+                                        <span>SQL Server</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fab fa-aws text-amber-500"></i>
+                                        <span>AWS</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fab fa-git-alt text-amber-500"></i>
+                                        <span>Git</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <i class="fab fa-docker text-amber-500"></i>
+                                        <span>Docker</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-[#2A2A2F] p-6 rounded-lg hover:bg-[#2A2A2F]/80 cursor-pointer group transition-all duration-300">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-code text-3xl text-amber-500"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold mb-2 text-lg">Desarrollo Full Stack</h3>
+                                <p class="text-gray-400 mb-3">Angular, React, .NET</p>
+                                <ul class="text-sm text-gray-400 space-y-1">
+                                    <li>• Desarrollo de aplicaciones web escalables</li>
+                                    <li>• APIs RESTful y microservicios</li>
+                                    <li>• Integración con servicios externos</li>
+                                </ul>
+                            </div>
+                            <i class="fas fa-arrow-right text-amber-500 opacity-0 group-hover:opacity-100 transition"></i>
+                        </div>
+                    </div>
+                    <div class="bg-[#2A2A2F] p-6 rounded-lg hover:bg-[#2A2A2F]/80 cursor-pointer group transition-all duration-300">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-database text-3xl text-amber-500"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold mb-2 text-lg">Bases de Datos</h3>
+                                <p class="text-gray-400 mb-3">SQL Server, MySQL</p>
+                                <ul class="text-sm text-gray-400 space-y-1">
+                                    <li>• Diseño y optimización de bases de datos</li>
+                                    <li>• Procedimientos almacenados y funciones</li>
+                                    <li>• Migración y mantenimiento de datos</li>
+                                </ul>
+                            </div>
+                            <i class="fas fa-arrow-right text-amber-500 opacity-0 group-hover:opacity-100 transition"></i>
+                        </div>
+                    </div>
+                    <div class="bg-[#2A2A2F] p-6 rounded-lg hover:bg-[#2A2A2F]/80 cursor-pointer group transition-all duration-300">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-cloud text-3xl text-amber-500"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold mb-2 text-lg">Cloud & DevOps</h3>
+                                <p class="text-gray-400 mb-3">Azure DevOps, AWS</p>
+                                <ul class="text-sm text-gray-400 space-y-1">
+                                    <li>• Implementación de CI/CD</li>
+                                    <li>• Configuración de servicios cloud</li>
+                                    <li>• Monitoreo y optimización</li>
+                                </ul>
+                            </div>
+                            <i class="fas fa-arrow-right text-amber-500 opacity-0 group-hover:opacity-100 transition"></i>
+                        </div>
+                    </div>
+                    <!-- Nuevo servicio -->
+                    <div class="bg-[#2A2A2F] p-6 rounded-lg hover:bg-[#2A2A2F]/80 cursor-pointer group transition-all duration-300">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-mobile-alt text-3xl text-amber-500"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold mb-2 text-lg">Desarrollo Web Responsive</h3>
+                                <p class="text-gray-400 mb-3">HTML5, CSS3, JavaScript</p>
+                                <ul class="text-sm text-gray-400 space-y-1">
+                                    <li>• Diseño adaptativo para todos los dispositivos</li>
+                                    <li>• Optimización de rendimiento</li>
+                                    <li>• Mejores prácticas de UX/UI</li>
+                                </ul>
+                            </div>
+                            <i class="fas fa-arrow-right text-amber-500 opacity-0 group-hover:opacity-100 transition"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Experiencia -->
+    <section id="experiencia" class="py-20 bg-[#2A2A2F]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12">Experiencia Profesional</h2> 
+            <div class="space-y-8">
+                <!-- Internship Developer -->
+                <div class="bg-[#1A1A1F] p-6 rounded-lg hover:bg-[#1A1A1F]/90 transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-amber-500">Internship Developer</h3>
+                        <p class="text-gray-400">Factor K Software - 2024 (Diciembre) - [Actualidad]</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">•</span>
+                            <span>Formé parte de un equipo de desarrollo responsable de crear aplicaciones web avanzadas, enfocadas en ser funcionales y recursivas para los usuarios, mientras optimizaba su rendimiento para garantizar sistemas eficientes y confiables.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">•</span>
+                            <span>Participé en el desarrollo de aplicaciones trabajando en conjunto con un equipo de desarrolladores.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">•</span>
+                            <span>Implementé soluciones escalables utilizando tecnologías modernas como Angular, React, .Net, Git y Azure DevOps.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">•</span>
+                            <span>Implementé prácticas escalables y de calidad para un mantenimiento y escalabilidad segura.</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Full Stack Developer - CamPos -->
+                <div class="bg-[#1A1A1F] p-6 rounded-lg hover:bg-[#1A1A1F]/90 transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-amber-500">Full Stack Developer</h3>
+                        <p class="text-gray-400">CamPos - 2024 (Abril) - 2025 (Enero)</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">•</span>
+                            <span>Colaboré con un equipo de desarrolladores en la creación de aplicaciones web complejas, optimizando la escalabilidad y el rendimiento del sistema.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">•</span>
+                            <span>Contribuí al desarrollo de aplicaciones mediante la colaboración con un equipo enfocado en la escalabilidad y funcionalidad.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">•</span>
+                            <span>Implementé soluciones escalables con Angular, React, .Net, Git y Azure DevOps.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">•</span>
+                            <span>Apliqué prácticas de calidad para garantizar mantenimiento y escalabilidad segura.</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Full Stack Developer - Sistema de Trazabilidad -->
+                <div class="bg-[#1A1A1F] p-6 rounded-lg hover:bg-[#1A1A1F]/90 transition-all duration-300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-amber-500">Full Stack Developer</h3>
+                        <p class="text-gray-400">Sistema de Trazabilidad - Tierra Buena - 2024 (Abril) - 2024 (Diciembre)</p>
+                    </div>
+                    <p class="text-gray-400 mb-4 italic">La idea es garantizar la trazabilidad de un producto desde varios módulos de mantenimiento por su transformación en el proceso (que puede incluir uno o más productos) hasta el envasado y la entrega al cliente correspondiente.</p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">•</span>
+                            <span>Desarrollo de un sistema CRM con varios módulos de mantenimiento.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">•</span>
+                            <span>Creación e implementación de servicios.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-500 mr-2">•</span>
+                            <span>Colaboración en la creación de modelos, interfaces, DTOs, servicios y controladores EF.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección Contacto -->
+    <section id="contacto" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12">Contacto</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <p class="text-gray-400 mb-8">
+                        ¿Tienes un proyecto en mente? Me encantaría escuchar tus ideas y ayudarte a hacerlas realidad. 
+                        No dudes en contactarme a través de cualquiera de estos medios.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-lg bg-[#2A2A2F] flex items-center justify-center">
+                                <i class="fas fa-envelope text-amber-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Email</h3>
+                                <a href="mailto:porfiriosalazarlopez319@outlook.com" 
+                                    class="text-gray-400 hover:text-amber-500 transition-colors">
+                                    porfiriosalazarlopez319@outlook.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-lg bg-[#2A2A2F] flex items-center justify-center">
+                                <i class="fas fa-phone text-amber-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">Teléfono</h3>
+                                <a href="tel:50650144840" 
+                                class="text-gray-400 hover:text-amber-500 transition-colors">
+                                    +(506) 5014-4840
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-lg bg-[#2A2A2F] flex items-center justify-center">
+                                <i class="fab fa-linkedin-in text-amber-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold mb-1">LinkedIn</h3>
+                                <a href="https://linkedin.com/in/porfirio-salazar-lopez" 
+                                target="_blank"
+                                class="text-gray-400 hover:text-amber-500 transition-colors">
+                                    porfirio-salazar-lopez
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#2A2A2F] p-8 rounded-lg">
+                    <h3 class="text-xl font-bold mb-6">Envíame un mensaje</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-gray-400 mb-2">Nombre</label>
+                            <input type="text" 
+                                class="w-full bg-[#1A1A1F] rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+                                placeholder="Tu nombre">
+                        </div>
+                        <div>
+                            <label class="block text-gray-400 mb-2">Email</label>
+                            <input type="email" 
+                                class="w-full bg-[#1A1A1F] rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+                                placeholder="tu@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-gray-400 mb-2">Mensaje</label>
+                            <textarea class="w-full bg-[#1A1A1F] rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500 h-32"
+                                    placeholder="Tu mensaje"></textarea>
+                        </div>
+                        <button type="submit" 
+                                class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                            Enviar mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#1A1A1F] py-6">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="tel:50650144840" class="text-gray-400 hover:text-amber-500">
+                    <i class="fas fa-phone-alt"></i> +(506) 5014-4840
+                </a>
+                <a href="mailto:porfiriosalazarlopez319@outlook.com" class="text-gray-400 hover:text-amber-500">
+                    <i class="fas fa-envelope"></i> porfiriosalazarlopez319@outlook.com
+                </a>
+                <a href="https://linkedin.com/in/porfirio-salazar-lopez" class="text-gray-400 hover:text-amber-500">
+                    <i class="fab fa-linkedin-in"></i> LinkedIn
+                </a>
+            </div>
+            <p class="text-gray-400">&copy; 2025 Josue Salazar Lopez.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
